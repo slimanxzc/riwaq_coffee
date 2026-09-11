@@ -1,0 +1,371 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'IBM'; 
+    src: url('fonts/IBMPlexSansArabic-Light.ttf'); 
+}
+
+@font-face {
+    font-family: 'IBM-bold'; 
+    src: url('fonts/IBMPlexSansArabic-Bold.ttf'); 
+}
+
+@font-face {
+    font-family: 'Hayyakum'; 
+    src: url('fonts/Hayyakum Allah-Bold.ttf'); 
+}
+
+.nav-item a {
+    font-family: 'IBM';
+    margin: 5px 10px;
+    font-size: 18px;
+    color: #f5fef8;
+    text-decoration: none;
+}
+
+.navbar-brand {
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fffefe;
+    text-decoration: none;
+    font-family: 'Hayyakum';
+}
+
+header {
+    position: relative;
+    background-image: url('images/body-pic.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 50px;
+}
+
+.hero-text {
+    position: absolute;
+    top: 55%;
+    right: 8%;
+    font-family: 'Hayyakum';
+    transform: translateY(-50%);
+    text-align: right;
+    color: #f5efe8;
+}
+
+.hero-text h1 {
+    font-size: 45px;
+}
+
+.hero-text h2 {
+    color: #d6a15d;
+    font-family: 'IBM-bold';
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.hero-text p {
+    color: #c9b8a5;
+    font-family: 'IBM';
+    font-size: 16px;
+}
+
+.btn-order-now {
+    border: none;
+    transition: 0.3s ease;
+    padding: 10px 18px;
+    border-radius: 4px;
+    color: #ffff;
+    background-color: #8b5e34;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.shopping-logo {
+    width: 20px;
+}
+
+.btn-order-now:hover {
+    background-color: #c58a4a;
+    box-shadow: 0 6px 20px rgba(197, 138, 74, 0.25);
+}
+
+.nav-link {
+    position: relative;
+    transition: all 0.4s;
+}
+
+.nav-link::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #c58a4a;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+.nav-link:hover {
+    color: #c58a4a !important;
+}
+
+.list-coffe {
+    padding: 30px 0 10px 0;
+}
+
+.list-coffe h1 {
+    font-family: 'IBM-bold';
+    font-size: 33px;
+    text-align: center;
+    color: #333;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 20px;
+}
+
+.card {
+    transition: all 0.3s ease;
+    width: 220px;
+    background-color: #ffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-content h3 {
+    font-family: 'IBM-bold';
+    font-size: 16px;
+    text-align: center;
+    color: #c58a4a;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    font-family: 'IBM';
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5;
+    color: #776a5c;
+    margin-bottom: 12px;
+}
+
+.order-btn {
+    background-color: white;
+    font-size: 12px;
+    height: 32px;
+    width: 90px;
+    transition: 0.3s ease;
+    border-radius: 4px;
+    color: #8b5e34;
+    border: 1px solid #d6a15d;
+    cursor: pointer;
+}
+
+.order-btn:hover {
+    color: white;
+    background-color: #c58a4a;
+    border-color: #c58a4a;
+    box-shadow: 0 0 15px rgba(207, 132, 51, 0.4);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(145, 94, 41, 0.2);
+}
+
+.about-us {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #8b5e34;
+    color: white;
+}
+
+.about-content {
+    max-width: 500px;
+}
+
+.about-content h1 {
+    font-family: 'IBM-bold';
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-family: 'IBM';
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.coffee-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+}
+
+.container-use {
+    text-align: center;
+    padding: 40px 0 10px 0;
+}
+
+.use-content h1 {
+    font-family: 'IBM-bold';
+    font-size: 35px;
+    color: #333;
+}
+
+.Icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0 50px 0;
+}
+
+.icon-box {
+    width: 240px;
+    text-align: center;
+    padding: 20px;
+    background: #fdfbf7;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.icon-box h4 {
+    font-family: 'IBM-bold';
+    margin: 15px 0 10px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.icon-box p {
+    color: #8b5e34;
+    font-family: 'IBM';
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.container-social {
+    display: flex;
+    flex-direction: column;
+    background-color: #8b5e34;
+    padding: 40px 0;
+    align-items: center;
+}
+
+.social-content h1 {
+    color: #f5fef8;
+    font-family: 'IBM-bold';
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.social-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-card {
+    width: 160px;
+    height: 60px;
+    border-radius: 10px;
+    border: 1px solid #f5fef8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #f5fef8;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.social-card i {
+    font-size: 24px;
+}
+
+.social-card span {
+    font-family: 'IBM';
+    font-size: 16px;
+}
+
+.social-card:hover {
+    cursor: pointer;
+    background-color: #c58a4a;
+    border-color: #c58a4a;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.footer-bottom {
+    background-color: #8b5e34;
+    color: #f5fef8;
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'IBM';
+    font-size: 14px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #f5fef8;
+    width: 80%;
+    margin: 0 auto 20px auto;
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        right: 5%;
+        left: 5%;
+        text-align: center;
+    }
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+    .about-content {
+        max-width: 100%;
+    }
+}
